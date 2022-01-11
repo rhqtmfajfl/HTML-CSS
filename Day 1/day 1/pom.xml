@@ -1,0 +1,105 @@
+들여쓰기 
+
+ctrl shift f
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.poscoict</groupId>
+  <artifactId>helloworld</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  	<packaging>jar</packaging>
+
+  <properties>
+  	<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+	<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+  	
+  </properties>
+  
+  
+  
+  //helloworld가    이클립스가 자동으로 설정을 해준다. 
+  <dependencies>
+  		  <dependencies>
+  		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.17</version>
+	</dependency>
+  </dependencies>
+  </dependencies>
+  
+  여기를 넣으면 wkehddmfh tjfwjd ehldjdlTek. fkdlqmfjfldp
+  
+  그런데 우리는 여기서 디펜던시 안에는 필요가 없다.
+  
+  이거를 삭제하고 저장하면 라이브러리에 maven에서 삭제된것을 알 수 있다.
+  
+  
+  
+ 	<build>
+		<scriptSourceDirectory>src/main/java</scriptSourceDirectory>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<source>11</source>   JavaSE-를 11로 만들어 주기 위한것
+					<target>11</target>
+					
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+  	<build>
+		<scriptSourceDirectory>src/main/java</scriptSourceDirectory>
+		<finalName>helloworld</finalName>                             ---- jar 파일이름을 helloworld로 만들어 준다.
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<source>11</source>
+					<target>11</target>
+					
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+  
+  
+  
+</project>
+
+
+
+
+크게 보면 properties
+
+dependencies
+
+build 로 나뉘어져 있다.
+
+테스트 할때는 실행만 ㅇ하니까 빌드를 만들 피룡ㄴ 없는데
+
+jar나 war를 만들면 서버에 배포 해야 되기 때문에 빌드 설정을 해야 한다.
+
+
+MAVEN 
+
+
+실행하기위해서는 GOALS에 따라 maven 실행
+
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ helloworld ---
+[INFO] Building jar: C:\Users\polar\eclipse-workspace\helloworld\target\helloworld-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.479 s
+[INFO] Finished at: 2022-01-11T16:36:03+09:00
+[INFO] ------------------------------------------------------------------------
