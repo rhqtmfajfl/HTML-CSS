@@ -8,3 +8,183 @@ email : kickscar@gmail.com
 
 강사님
 이름 안대혁
+
+
+jvm 은 java.exe 자바를 실행시키는 프로그램
+
+모든 자바는 java.exe위에서 실행되낟.
+
+
+
+jvm         )     -
+javaapi    )      -  jdk
+ISO-8859-1
+
+
+
+eclipse에서 알아야 되는 두가지
+
+1) perspective(조망) 개발(java se, java ee) view 배치
+
+perspective를 바꿀 수 있는 곳
+
+
+깃은 perspective에서 show 에서 oter에서 git repository 만 꺼내면 된다.
+
+2) 설정 
+      encoding
+  1. 설정에서는 workspace에서 encoding 설정을 utf-8로 해놓는다.
+      -content Types는 각각의 파일들을 뭘로 encoding 하겠느냐 라는 의미다. 
+       Text를 누르면 거기서 default encoding을 utf-8로 해놓는다.
+        자바 porperties 빼고 다 utf-8로 해놓는다.
+      -  workspace에서 oter를 utf-8로 설정한다.
+      - web 에서 css html jsp를 맨위에 utf-8로 설정 해놓는다.
+      
+      
+      
+  2.spelling 
+  spelling에서 disable 시킨다.
+  
+  
+  
+  
+  myproject
+    - /.settings
+    - /.classpath
+    - /.projects
+    - src
+    - pom.xml 
+    
+    src랑 pom.xml만 있으면 maven이 된다.
+    
+    
+    
+    
+    
+ myproject를  깃에 올리면 maven으로 받으면 common한 프로젝트이기때문에
+ 
+ 이클립스는 자동으로 바꿔준다.
+ 
+    
+    
+ maven, gradle 프로젝트를 깃에다 올려야 한다.
+      
+        maven project는
+           -src
+           - pom.xml
+           
+           
+  
+    myproject 
+       -/.idea
+
+    
+    myproject 
+    - /.idea
+    
+    
+    servlet-practice
+       |--- helloweb
+       |--- guestbook
+       |--- mysite
+
+이클립스에서는 부모 프로젝트 자식 프로젝트로 만드는 것은 불가능하지만
+
+maven에서는 가능하다.
+
+
+
+
+
+myproject 는 maven 프로젝트로 만들어 놓을 거이다.  maven 은 빌딩 툴이다
+
+  - src
+  - pom.xml
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ////////////////////////
+  
+  실습 
+  
+  helloworld 프로젝트는 소문자로
+  helloworld를 maven 프로젝트로 한다.
+  
+  helloworld01
+  maven인 hellowrld  단독으로 만들어보고
+  
+  javastudy    (부모프로젝트)
+    |- practice01
+    |- practice02
+    
+    
+      servlet-practice
+       |--- edu
+       |--- mvc
+       |--- helloweb
+
+project
+
+  |- src    package랑 *.java 파일들이 들어간다.  
+  src는 여기다가는 소스를 만들어라 패키지도 여기 만들고 자바소스도 여기 만든다.
+  패키지의 주요 기능은  다양한 클래스들의 기능이 있는데
+  
+  
+  
+  패키지명
+  
+  com.poscoicet.helloworld.db
+  패키지는 프로젝트를 구조를 넣는게 첫번재이다.  
+  
+  만약 
+  - userDao.java 
+  패키지는 소프트웨어에서 구조를 나눌때
+  
+  
+  /////
+  '.'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+/////
+
+
+
+
+C:\Users\polar\eclipse-workspace\helloworld01\bin>java com.poscoict.helloworld.hello.HelloWorld
+
+C:\Users\polar\eclipse-workspace\helloworld01\bin>echo %CLASSPATH%
+%CLASSPATH%   이거는 classpath 를 환경 변수에 만들어 주면 생긴다.
+
+
+
+  
+  
+  자바 new - project - maven project
+  
+  creage a simple project 선택  
+  
+  next
+  
+  groupid 회사 이름 com.poscoict
+  
+  artifact id helloworld
+  
+  웹 어플리케이션으로 만들때 war로 하면 된다.
+  
+  
+  maven 이 생성 되면 
+  
+  깃허브에는  src 와 pom.xml만 올리면 된다.
+  
+  
+  pom.xml 
+  
+  
